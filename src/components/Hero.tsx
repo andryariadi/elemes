@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ButtonMotion from "./ButtonMotion";
+import { IoMdStar } from "react-icons/io";
 
 const Hero = () => {
   return (
@@ -34,10 +35,27 @@ const Hero = () => {
 
         {/* Hero Image */}
         <div className="b-sky-500 w-full flex items-center justify-center">
-          <div className="bg-teen_gray bg-opacity-20 w-[27rem] h-[27rem] flex items-center justify-center rounded-full border hover:border-green-1 transition-all duration-300">
+          <div className="relative bg-teen_gray bg-opacity-20 w-[27rem] h-[27rem] flex items-center justify-center rounded-full border hover:border-green-1 transition-all duration-300">
+            {/* Image */}
             <div className="b-rose-600 relative w-[22rem] h-[22rem] hover:rotate-12 hover:scale-105 transition-all duration-300">
               <Image src="/home2.png" alt="Hero" fill className="object-cover" />
             </div>
+
+            {/* Card */}
+            <figure className="bg-white-1 shadow-md bg-opacity-30 backdrop-blur-lg border border-white-1/10 hover:border-green-1 transition-all duration-300 absolute bottom-0 -left-20 flex items-center gap-3 py-5 px-7 rounded-lg">
+              <Image src="/home2.png" alt="Hero" width={50} height={50} />
+
+              <figcaption className="flex flex-col justify-center gap-1">
+                <span className="text-black-1">Green Salad Tomato</span>
+                <span className="text-dark_gray text-xs">Tomato</span>
+                <span className="flex items-center gap-1">
+                  {[...Array(5)].map((_, index, array) => {
+                    const isLast = index === array.length - 1;
+                    return <IoMdStar key={index} size={12} className={isLast ? "text-gray-500" : "text-yellow-500"} />;
+                  })}
+                </span>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>

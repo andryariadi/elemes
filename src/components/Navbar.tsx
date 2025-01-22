@@ -1,11 +1,27 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { navLinks } from "@/constant";
 import Image from "next/image";
 import Link from "next/link";
 import ButtonMotion from "./ButtonMotion";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="px-[9.3rem] min-h-[6.5rem] flex items-center justify-between bg-transparent bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+    <header className={`px-[9.3rem] min-h-[6.5rem] flex items-center justify-between sticky top-0 z-50 shadow-sm transition-colors duration-300 ${isScrolled ? "bg-white-1 bg-opacity-30 backdrop-blur-lg" : "bg-transparent"}`}>
       {/* Logo */}
       <Link href="/" className="b-sky-500">
         <Image src="/logo.png" alt="Logo" width={150} height={150} />
