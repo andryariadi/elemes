@@ -25,7 +25,7 @@ export default {
           2: "#F3F7D9",
         },
         sky_walker: {
-          1: '"#40A2B1"',
+          1: "#40A2B1",
           2: "#E6F3F5",
         },
         dark_blue: {

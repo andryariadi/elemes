@@ -1,7 +1,5 @@
-import React from "react";
-
 const CategoryPage = () => {
-  return <div>CategoryPage</div>;
+  return <div className="bg-pink-500 min-h-[calc(100vh-6.5rem)]">CategoryPage</div>;
 };
 
 export default CategoryPage;

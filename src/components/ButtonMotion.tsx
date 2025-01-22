@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const ButtonMotion = ({ title, link, icon }: { title: string; link: string; icon?: boolean }) => {
+const ButtonMotion = ({ title, link, btn, icon }: { title: string; link?: string; btn?: boolean; icon?: boolean }) => {
   let bgBtn = "bg-btn";
   if (title === "Masuk") {
     bgBtn = "bg-transparent border-2 border-green-1";
@@ -19,12 +19,16 @@ const ButtonMotion = ({ title, link, icon }: { title: string; link: string; icon
   }
 
   return (
-    <motion.button type="button" whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.95 }} className="">
-      <Link href={link} className={`${bgBtn} w-full text-14 md:button_bold-16 px-2 md:px-5 py-[12px] rounded-full flex items-center gap-2`}>
-        {icon && <span>{icon}</span>}
+    <motion.button type="button" whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.95 }} className={`${btn && `${bgBtn} w-fit text-14 md:button_bold-16 px-2 md:px-5 py-[12px] rounded-full flex items-center gap-2`}`}>
+      {link && (
+        <Link href={link} className={`${bgBtn} w-full text-14 md:button_bold-16 px-2 md:px-5 py-[12px] rounded-full flex items-center gap-2`}>
+          {icon && <span>{icon}</span>}
 
-        <span className={`text-sm ${textColor} `}>{title}</span>
-      </Link>
+          <span className={`text-sm ${textColor}`}>{title}</span>
+        </Link>
+      )}
+
+      {btn && <span className={`text-sm ${textColor}`}>{title}</span>}
     </motion.button>
   );
 };

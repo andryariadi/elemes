@@ -42,7 +42,7 @@ const Hero = () => {
             </div>
 
             {/* Card */}
-            <figure className="bg-white-1 shadow-md bg-opacity-30 backdrop-blur-lg border border-white-1/10 hover:border-green-1 transition-all duration-300 absolute bottom-0 -left-20 flex items-center gap-3 py-5 px-7 rounded-lg">
+            <figure className="bg-white-1 shadow-md bg-opacity-5 backdrop-blur-lg border border-white-1/10 hover:border-green-1 transition-all duration-300 absolute bottom-0 -left-20 flex items-center gap-3 py-5 px-7 rounded-lg">
               <Image src="/home2.png" alt="Hero" width={50} height={50} />
 
               <figcaption className="flex flex-col justify-center gap-1">
