@@ -5,14 +5,14 @@ import ButtonMotion from "./ButtonMotion";
 
 const Navbar = () => {
   return (
-    <nav className="px-[9.3rem] min-h-[6.5rem] flex items-center justify-between bg-transparent sticky top-0 z-50 shadow-sm">
+    <header className="px-[9.3rem] min-h-[6.5rem] flex items-center justify-between bg-transparent bg-opacity-90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
       {/* Logo */}
       <Link href="/" className="b-sky-500">
         <Image src="/logo.png" alt="Logo" width={150} height={150} />
       </Link>
 
       {/* Nav Links */}
-      <div className="b-emerald-500 flex items-center gap-10">
+      <nav className="b-emerald-500 flex items-center gap-10">
         {navLinks.map((link) => (
           <Link key={link.title} href={link.href} className="relative b-rose-500 text-sm text-dark_gray font-semibold hover:text-green-1 transition-all duration-300 py-5">
             <span>{link.title}</span>
@@ -20,7 +20,7 @@ const Navbar = () => {
             {link.title === "Promotions" && <span className="absolute -top-1 -right-2 bg-dark_red text-white-1 text-xs font-light px-3 py-1 rounded-full">Hot</span>}
           </Link>
         ))}
-      </div>
+      </nav>
 
       {/* Auth */}
       <div className="b-violet-500 flex items-center gap-5">
@@ -28,7 +28,7 @@ const Navbar = () => {
 
         <ButtonMotion title="Daftar Sekarang" link="/register" />
       </div>
-    </nav>
+    </header>
   );
 };
 
