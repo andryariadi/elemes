@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>andry</main>;
+  return <main className="bg-rose-600">andry</main>;
 }

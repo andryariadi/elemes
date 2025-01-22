@@ -19,6 +19,8 @@ export default {
         sky: "#40A2B1",
         dark_blue: "#405EB6",
         dark_pink: "#B23F74",
+        dark_gray: "#757575",
+        dark_red: "#E7462D",
       },
     },
   },
