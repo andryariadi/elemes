@@ -4,7 +4,7 @@ import { IoMdStar } from "react-icons/io";
 
 const Hero = () => {
   return (
-    <div className="relative px-[9.3rem] min-h-[calc(100vh-6.5rem)] b-amber-500">
+    <div className="b-amber-500 relative px-[9.3rem] min-h-[calc(100vh-6.5rem)]">
       {/* Background Image */}
       <div
         className="absolute -top-14 -left-0 -right-0 -bottom-0 bg-cover bg-center opacity-[0.03]"
