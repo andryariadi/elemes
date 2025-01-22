@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubik.className} antialiased space-y-5 h-[100rem]`}>
+      <body className={`${rubik.className} antialiased h-[100rem]`}>
         <Navbar />
         {children}
       </body>

@@ -5,11 +5,11 @@ import ButtonMotion from "./ButtonMotion";
 
 const Navbar = () => {
   return (
-    <nav className="px-[9.3rem] py-5 flex items-center justify-between bg-transparent bg-opacity-50 backdrop-blur-md shadow-sm sticky top-0 z-50">
+    <nav className="px-[9.3rem] min-h-[6.5rem] flex items-center justify-between bg-transparent sticky top-0 z-50 shadow-sm">
       {/* Logo */}
-      <div className="bg-sky-500">
+      <Link href="/" className="b-sky-500">
         <Image src="/logo.png" alt="Logo" width={150} height={150} />
-      </div>
+      </Link>
 
       {/* Nav Links */}
       <div className="b-emerald-500 flex items-center gap-10">

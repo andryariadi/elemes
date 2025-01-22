@@ -4,12 +4,26 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const ButtonMotion = ({ title, link, icon }: { title: string; link: string; icon?: boolean }) => {
+  let bgBtn = "bg-btn";
+  if (title === "Masuk") {
+    bgBtn = "bg-transparent border-2 border-green-1";
+  } else if (title === "About Us") {
+    bgBtn = "bg-light_gray border-2 border-gray-200";
+  }
+
+  let textColor = "text-white-1";
+  if (title === "Masuk") {
+    textColor = "text-green-1";
+  } else if (title === "About Us") {
+    textColor = "text-black-1";
+  }
+
   return (
     <motion.button type="button" whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.95 }} className="">
-      <Link href={link} className={`${title === "Masuk" ? "bg-transparent border-2 border-green-1" : "bg-btn"} w-full text-14 md:button_bold-16 px-2 md:px-5 py-[10px] rounded-full flex items-center gap-2`}>
+      <Link href={link} className={`${bgBtn} w-full text-14 md:button_bold-16 px-2 md:px-5 py-[12px] rounded-full flex items-center gap-2`}>
         {icon && <span>{icon}</span>}
 
-        <span className={`text-sm ${title === "Create Video" || (title === "Dashboard" && "hidden md:block")} ${title === "Masuk" ? "text-green-1" : "text-white-1"}`}>{title}</span>
+        <span className={`text-sm ${textColor} `}>{title}</span>
       </Link>
     </motion.button>
   );
