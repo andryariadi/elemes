@@ -29,7 +29,7 @@ const InputField = ({ icon, passIcon, openPass, setOpenPass, type, propData, ...
         {...propData}
         {...props}
         type={type}
-        className="bg-transparent w-full py-3 pl-3 pr-11 bg-dark-400 rounded-s-lg outline-none border border-green-1 focus:border-emerald-500 text-white placeholder:text-sm placeholder-dark_gray placeholder-opacity-50 transition-all duration-300"
+        className="bg-transparent w-full py-3 pl-3 pr-11 bg-dark-400 rounded-s-lg outline-none border border-green-1 focus:border-emerald-500 text-white placeholder:text-xs lg:placeholder:text-sm placeholder-dark_gray placeholder-opacity-50 transition-all duration-300"
       />
     </div>
   );
