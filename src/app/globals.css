@@ -34,3 +34,13 @@
     @apply text-[32px] leading-normal;
   }
 }
+
+/* Menghilangkan scrollbar untuk container */
+.no-scrollbar {
+  scrollbar-width: none; /* Untuk Firefox */
+  -ms-overflow-style: none; /* Untuk IE 10+ */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Untuk Chrome, Safari, dan Opera */
+}

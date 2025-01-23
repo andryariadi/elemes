@@ -47,6 +47,31 @@ export const categoryMenu = [
     icon: "/donut.png",
     items: 22,
   },
+  {
+    title: "Cupcake",
+    icon: "/cake.png",
+    items: 22,
+  },
+  {
+    title: "Pizza",
+    icon: "/pizza.png",
+    items: 22,
+  },
+  {
+    title: "Kebab",
+    icon: "/kebab.png",
+    items: 22,
+  },
+  {
+    title: "Salmon",
+    icon: "/salmon.png",
+    items: 22,
+  },
+  {
+    title: "Doughnut",
+    icon: "/donut.png",
+    items: 22,
+  },
 ];
 
 export const trendingMenu = [
