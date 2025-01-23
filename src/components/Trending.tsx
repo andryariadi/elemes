@@ -1,11 +1,11 @@
-import axios from "axios";
+// import axios from "axios";
 import { lazy, Suspense } from "react";
 import Loading from "./Loader";
 
 const TrendingCard = lazy(() => import("./TrendingCard"));
 
 const Trending = async () => {
-  const { data: trendingMenu } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/trending`);
+  // const { data: trendingMenu } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/trending`);
 
   return (
     <section className="px-5 md:px-7 xl:px-10 2xl:px-[9.3rem] min-h-[calc(100vh-6.5rem)] space-y-12">
@@ -18,7 +18,7 @@ const Trending = async () => {
 
       {/* Trending Card */}
       <div>
-        <Suspense fallback={<Loading />}>{<TrendingCard trendingMenu={trendingMenu} />}</Suspense>
+        <Suspense fallback={<Loading />}>{<TrendingCard />}</Suspense>
       </div>
     </section>
   );

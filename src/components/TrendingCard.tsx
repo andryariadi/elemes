@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { IoMdStar } from "react-icons/io";
 import ButtonMotion from "./ButtonMotion";
+import { trendingMenu } from "@/constant";
 
-type TrendingMenu = {
-  title: string;
-  img: string;
-  category: string;
-  star: number;
-};
+// type TrendingMenu = {
+//   title: string;
+//   img: string;
+//   category: string;
+//   star: number;
+// };
 
-const TrendingCard = ({ trendingMenu }: { trendingMenu: TrendingMenu[] }) => {
+const TrendingCard = () => {
   return (
     <div className="flex flex-col items-center gap-y-10">
       {/* Trending Card */}
