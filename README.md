@@ -2,7 +2,7 @@
 
 1.  npm i untuk menginstall semua package dependencies yang ada pada package.json
 2.  npm run dev unutk menjalankan aplikasi dilocal
-3.  dan berikut ini adalah link deploy website
+3.  dan berikut ini adalah link deploy website https://elemes-andryariadi.vercel.app/
 
 -Berikut saran/masukan untuk perbaikan website elemes.id:
 Karena website elemes.id adalah website landing page saja maka saya hanya akan memberi saran/masukan dari sisi UI nya saja dan saran/masukan saya dapat berupa redesign langsung pada UI yang menurut saya masih bisa untuk diperbaiki agar lebih User Friendly dan berikut beberapa bagian UI yang saya redesign:
