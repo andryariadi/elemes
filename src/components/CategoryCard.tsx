@@ -16,9 +16,9 @@ const CategoryCard = () => {
   };
 
   return (
-    <div className="b-fuchsia-600 space-y-5">
+    <div className="space-y-5">
       {/* Card Container */}
-      <div ref={scrollRef} className="b-emerald-600 w-full max-w-[75.5rem] flex items-center overflow-x-auto gap-x-5 scroll-smooth no-scrollbar">
+      <div ref={scrollRef} className="w-full max-w-[75.5rem] flex items-center overflow-x-auto gap-x-5 scroll-smooth no-scrollbar">
         {categoryMenu.map((category) => {
           let bgColor;
 
@@ -36,7 +36,7 @@ const CategoryCard = () => {
 
           return (
             // Saran Perbaikan UI
-            <figure key={category.title} className={`b-sky-600 group ${bgColor} relative w-full max-w-52 flex items-center justify-center py-3 px-7 rounded-md`}>
+            <figure key={category.title} className={`group ${bgColor} relative w-full max-w-52 flex items-center justify-center py-3 px-7 rounded-md`}>
               <div
                 className="hidden group-hover:block transition-all duration-300 absolute -top-0 -left-0 -right-0 -bottom-0 bg-cover bg-center opacity-[0.1]"
                 style={{
@@ -44,7 +44,7 @@ const CategoryCard = () => {
                 }}
               />
 
-              <div className="b-violet-700 relative left-0 top-0 w-full z-10 flex items-center justify-center gap-x-5">
+              <div className="relative left-0 top-0 w-full z-10 flex items-center justify-center gap-x-5">
                 <div className="b-emerald-500 size-14 flex items-center justify-center rounded-full border border-green-1/10 bg-green-1 bg-opacity-30">
                   <Image src={category.icon} alt={category.title} width={30} height={30} />
                 </div>
@@ -60,7 +60,7 @@ const CategoryCard = () => {
       </div>
 
       {/* Button Pagination */}
-      <div className="b-pink-500 w-full max-w-[75.5rem] flex items-center justify-end gap-5">
+      <div className="w-full max-w-[75.5rem] flex items-center justify-end gap-5">
         <ButtonPagination title="Prev" scrollHandler={scrollHandler} />
         <ButtonPagination title="Next" scrollHandler={scrollHandler} />
       </div>

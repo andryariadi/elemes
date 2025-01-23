@@ -30,7 +30,7 @@ const ButtonMotion = ({ title, link, btn, icon }: { title: string; link?: string
         <Link href={link} className={`${bgBtn} w-full text-14 md:button_bold-16 px-2 md:px-5 ${icon ? "py-[8px]" : "py-[12px]"} rounded-full flex items-center gap-2`}>
           {icon && <span className="bg-green-1/30 p-1 rounded-lg">{icons}</span>}
 
-          <span className={`text-sm ${textColor}`}>{title}</span>
+          <span className={`${icon ? "hidden" : "md:block"}text-xs md:text-sm ${textColor}`}>{title}</span>
         </Link>
       )}
 

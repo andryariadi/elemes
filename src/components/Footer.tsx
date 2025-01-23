@@ -8,10 +8,10 @@ import FooterForm from "./FormFooter";
 
 const Footer = () => {
   return (
-    <footer className="-fuchsia-600 mt-24 px-5 md:px-7 xl:px-10 2xl:px-[9.3rem]">
-      <div className="bg-green-2 min-w-full rounded-lg flex flex-col md:flex-row items-center gap-5 md:gap-0 p-14 md:p-8 lg:p-14">
+    <footer className="mt-24 px-5 md:px-7 xl:px-10 2xl:px-[9.3rem]">
+      <div className="bg-green-2 min-w-full rounded-lg flex flex-col md:flex-row items-center gap-5 md:gap-0 p-5 md:p-8 lg:p-14">
         {/* Logo & Address */}
-        <div className="b-rose-500 w-full max-w-md space-y-5">
+        <div className="w-full max-w-md space-y-5">
           {/* Logo */}
           <Link href="/">
             <Image src="/logo.png" alt="Logo" width={150} height={150} />
@@ -34,9 +34,9 @@ const Footer = () => {
         </div>
 
         {/* Nav Links */}
-        <div className="b-amber-500 w-full flex items-start justify-between gap-5 lg:gap-0">
+        <div className="w-full flex items-start justify-between gap-5 lg:gap-0">
           {/* Category */}
-          <div className="b-green-500 space-y-5">
+          <div className="space-y-5">
             <h3 className="text-black-1 text-md text-nowrap">Categories</h3>
 
             {/* NavLinks */}
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
 
           {/* About Us */}
-          <div className="b-rose-500 space-y-5">
+          <div className="space-y-5">
             <h3 className="text-black-1 text-md text-nowrap">About Us</h3>
 
             {/* NavLinks */}
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
 
           {/* News Latter */}
-          <div className="b-violet-500 space-y-5">
+          <div className="space-y-5">
             <h3 className="text-black-1 text-md text-nowrap">New Letter</h3>
 
             {/* Content */}

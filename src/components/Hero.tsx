@@ -4,17 +4,18 @@ import { IoMdStar } from "react-icons/io";
 
 const Hero = () => {
   return (
-    <div className="b-amber-500 relative px-5 md:px-7 xl:px-10 2xl:px-[9.3rem] min-h-[calc(100vh-6.5rem)]">
+    <div className="relative px-5 md:px-7 xl:px-10 2xl:px-[9.3rem] min-h-[calc(100vh-6.5rem)]">
       {/* Background Image */}
       <div
-        className="absolute -top-14 -left-0 -right-0 -bottom-0 bg-cover bg-center opacity-[0.03]"
+        className="absolute -top-14 -left-0 -right-0 -bottom-0 opacity-[0.03] 
+             sm:bg-[length:25px_25px] md:bg-[length:100px_100px] lg:bg-[length:200px_200px]"
         style={{
           backgroundImage: `url('/hero.png')`,
         }}
       />
 
       {/* Content */}
-      <div className="b-amber-500 relative top-0 left-0 min-h-[calc(100vh-6.5rem)] z-10 flex items-center justify-center">
+      <div className="relative top-0 left-0 min-h-[calc(100vh-6.5rem)] z-10 flex items-center justify-center">
         {/* Content */}
         <div className="b-emerald-500 w-full pt-5 md:pt-0 space-y-20 md:space-y-7">
           {/* Tile */}
@@ -24,7 +25,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Image Only in Mobile */}
-          <div className="b-sky-500 w-full md:hidden flex items-center justify-start">
+          <div className="w-full md:hidden flex items-center justify-start">
             <div className="relative bg-teen_gray bg-opacity-20 w-[16rem] h-[16rem] flex items-center justify-center rounded-full border hover:border-green-1 transition-all duration-300">
               {/* Image */}
               <div className="b-rose-600 relative w-[13rem] h-[13rem] hover:rotate-12 hover:scale-105 transition-all duration-300">
@@ -32,7 +33,7 @@ const Hero = () => {
               </div>
 
               {/* Card */}
-              <figure className="bg-white-1 shadow-md bg-opacity-5 backdrop-blur-lg border border-white-1/10 hover:border-green-1 transition-all duration-300 absolute -bottom-5 -right-32 flex items-center gap-3 py-5 px-7 rounded-lg">
+              <figure className="bg-white-1 shadow-md bg-opacity-5 backdrop-blur-lg border border-white-1/10 hover:border-green-1 transition-all duration-300 absolute -bottom-8 -right-28 flex items-center gap-3 py-5 px-7 rounded-lg animate-bounce-smooth">
                 <Image src="/home2.png" alt="Hero" width={50} height={50} />
 
                 <figcaption className="flex flex-col justify-center gap-1">
@@ -51,9 +52,7 @@ const Hero = () => {
 
           <div className="space-y-5 md:space-y-7">
             {/* Description */}
-            <p className="b-amber-500 text-dark_gray text-balance w-full max-w-md">
-              I would think that conserving our natural resources should be a conservative position: Not to waste food, and not to throw away a lot of the food that we buy.
-            </p>
+            <p className="text-dark_gray text-balance w-full max-w-md">I would think that conserving our natural resources should be a conservative position: Not to waste food, and not to throw away a lot of the food that we buy.</p>
 
             {/* Button */}
             <div className="flex items-center gap-5">
@@ -64,15 +63,15 @@ const Hero = () => {
         </div>
 
         {/* Hero Image */}
-        <div className="b-sky-500 w-full hidden md:flex items-center justify-center">
+        <div className="w-full hidden md:flex items-center justify-end xl:justify-center">
           <div className="relative bg-teen_gray bg-opacity-20 w-[18rem] h-[18rem] lg:w-[27rem] lg:h-[27rem] flex items-center justify-center rounded-full border hover:border-green-1 transition-all duration-300">
             {/* Image */}
-            <div className="b-rose-600 relative w-[14rem] h-[14rem] lg:w-[22rem] lg:h-[22rem] hover:rotate-12 hover:scale-105 transition-all duration-300">
+            <div className="relative w-[14rem] h-[14rem] lg:w-[22rem] lg:h-[22rem] hover:rotate-12 hover:scale-105 transition-all duration-300">
               <Image src="/home2.png" alt="Hero" fill className="object-cover" />
             </div>
 
             {/* Card */}
-            <figure className="bg-white-1 shadow-md bg-opacity-5 backdrop-blur-lg border border-white-1/10 hover:border-green-1 transition-all duration-300 absolute -bottom-10 -left-20 lg:bottom-0 lg:-left-20 flex items-center gap-3 py-5 px-7 rounded-lg">
+            <figure className="bg-white-1 shadow-md bg-opacity-5 backdrop-blur-lg border border-white-1/10 hover:border-green-1 transition-all duration-300 absolute -bottom-10 -left-20 lg:bottom-0 lg:-left-20 flex items-center gap-3 py-5 px-7 rounded-lg animate-bounce-smooth">
               <Image src="/home2.png" alt="Hero" width={50} height={50} />
 
               <figcaption className="flex flex-col justify-center gap-1">

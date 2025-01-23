@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubik.className} antialiased h-[100rem]`}>{children}</body>
+      <body className={`${rubik.className} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -27,12 +27,12 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <Link href="/" className="b-sky-500">
+      <Link href="/">
         <Image src="/logo.png" alt="Logo" width={150} height={150} />
       </Link>
 
       {/* Nav Links */}
-      <nav className="b-emerald-500 hidden lg:flex items-center gap-10">
+      <nav className="hidden lg:flex items-center gap-10">
         {navLinks.map((link) => (
           <Link key={link.title} href={link.href} className="relative b-rose-500 text-sm text-dark_gray font-semibold hover:text-green-1 transition-all duration-300 py-5">
             <span>{link.title}</span>
@@ -43,7 +43,7 @@ const Navbar = () => {
       </nav>
 
       {/* Auth */}
-      <div className="b-violet-500 flex items-center gap-3">
+      <div className="flex items-center gap-3">
         <ButtonMotion title="Masuk" link="/login" icon />
         <ButtonMotion title="Daftar Sekarang" link="/register" />
       </div>

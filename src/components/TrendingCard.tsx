@@ -1,13 +1,19 @@
-import { trendingMenu } from "@/constant";
 import Image from "next/image";
 import { IoMdStar } from "react-icons/io";
 import ButtonMotion from "./ButtonMotion";
 
-const TrendingCard = () => {
+type TrendingMenu = {
+  title: string;
+  img: string;
+  category: string;
+  star: number;
+};
+
+const TrendingCard = ({ trendingMenu }: { trendingMenu: TrendingMenu[] }) => {
   return (
-    <div className="b-pink-500 flex flex-col items-center gap-y-10">
+    <div className="flex flex-col items-center gap-y-10">
       {/* Trending Card */}
-      <div className="b-sky-600 min-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      <div className="min-w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         {trendingMenu.map((trending) => {
           const starNumber = trending.star;
 
